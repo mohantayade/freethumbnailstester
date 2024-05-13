@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import ytprofile from '@/assets/ytprofile.png'
 import menu from '@/assets/menu.svg'
 import youtube from '@/assets/YouTube-Logo.png'
@@ -59,6 +59,7 @@ function Preview() {
       image:"/thum6.webp"},
   ]
   return (
+    <Suspense>
     <div>
       
       <div className='flex justify-center my-3'>
@@ -155,7 +156,7 @@ function Preview() {
 
     
     </div>
-    
+    </Suspense>
   )
 }
 
