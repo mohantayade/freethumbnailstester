@@ -37,16 +37,16 @@ export default function Home() {
   {/* <ImageUpload/> */}
   <div className='flex flex-col md:flex-row gap-10 justify-center items-center my-8'>
       <div>
-        <div style={{["--image-url" as string] : `url(${file})`}} className='w-[400px] h-[225px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border'>
+        <div style={{["--image-url" as string] : `url(${file})`}} className='max-w-[380px] h-[214px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border '>
           {/* <img src={file} alt="image" /> */}
           <p className={file?'hidden':'text-2xl font-bold text-gray-400'}>1920 x 1080 px or 16:9</p>
           <input type="file" name="Image" id="image" onChange={handleChange} ref={hiddenFileInput}
         style={{display: 'none'}}/>
           <button onClick={handleClick}  className='bg-[#FF1616] text-white p-3 rounded-3xl font-bold'>{file?'Reupload Image':'Upload Image'}</button>
-          
           </div>
+
           <div className='flex gap-3 items-center'>
-            <div>
+            <div className="ml-2">
             <Image src={ytimage} alt="icon" width={50} height={50}/>
             </div>
             <div>
@@ -90,7 +90,7 @@ export default function Home() {
 
       <div className="text-center mb-12">
         <p className="text-5xl mb-2">🤔</p>
-      <h3 className="text-2xl font-bold mb-2">How Thumbnail Tester Works?</h3>
+      <h3 className="text-2xl font-bold mb-2 px-3">How Thumbnail Tester Works?</h3>
       <p className="max-w-[100] px-8 md:px-14 lg:px-48 font-bold text-gray-500">Thumbnail Tester lets you to test your YouTube Titles and Thumbnails in context of the current YouTube feed and layout.</p><p className="max-w-[100] px-8 md:px-14 lg:px-48 font-bold text-gray-500">
 Compare your video's thumbnail and title in context to current content you can see how well your content stands out.</p>
 
