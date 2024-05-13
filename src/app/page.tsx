@@ -79,7 +79,6 @@ export default function Home() {
   }}
   >Preview →</Link>
 
-
 </div>
         
       </div>
