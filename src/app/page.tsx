@@ -6,6 +6,8 @@ import { useRef, useState } from "react";
 import ytimage from '../assets/ytprofile.png'
 import Link from "next/link";
 
+import { Suspense } from "react"
+
 export default function Home() {
 
   const hiddenFileInput:React.MutableRefObject<any> = useRef(null);
@@ -65,7 +67,7 @@ export default function Home() {
         
 <div className='mt-8'>
 
-
+<Suspense>
 <Link
   className={file?'bg-[#FF1616] text-white p-3 rounded-3xl font-bold px-4':'bg-[#FF1616] text-white p-3 rounded-3xl font-bold px-4 opacity-50 pointer-events-none'} 
   href={{
@@ -77,7 +79,7 @@ export default function Home() {
     }
   }}
   >Preview →</Link>
-
+ </Suspense>
 
 </div>
         
