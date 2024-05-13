@@ -15,7 +15,7 @@ import Image from 'next/image';
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
-
+import { Suspense } from "react"
 
 function Preview() {
   const [desktopbtnActive,setDesktopBtnActive] = useState(true);
@@ -60,6 +60,7 @@ function Preview() {
   ]
   return (
     <div>
+      <Suspense>
       <div className='flex justify-center my-3'>
       <Link href='/' className='bg-[#FF1616] text-white text-xl font-bold p-3 px-4 rounded-3xl'>← Home</Link>
       </div>
@@ -152,7 +153,7 @@ function Preview() {
     
     
 
-
+    </Suspense>
     </div>
     
   )
