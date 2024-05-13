@@ -35,7 +35,7 @@ export default function Home() {
   {/* <ImageUpload/> */}
   <div className='flex flex-col md:flex-row gap-10 justify-center items-center my-8'>
       <div>
-        <div style={{'--image-url' : `url(${file})`}} className='w-[400px] h-[225px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border'>
+        <div style={{["--image-url" as string] : `url(${file})`}} className='w-[400px] h-[225px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border'>
           {/* <img src={file} alt="image" /> */}
           <p className={file?'hidden':'text-2xl font-bold text-gray-400'}>1920 x 1080 px or 16:9</p>
           <input type="file" name="Image" id="image" onChange={handleChange} ref={hiddenFileInput}

@@ -15,6 +15,8 @@ import Image from 'next/image';
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
+
+
 function Preview() {
   const [desktopbtnActive,setDesktopBtnActive] = useState(true);
   const [phonebtnActive,setPhoneBtnActive] = useState(false)
@@ -122,7 +124,7 @@ function Preview() {
       ytVideo.map((thumbnail)=>(
         <div key={thumbnail.id} className='thumbnail mx-auto my-2'>
         <div>
-        <div style={{'--image-url': `url(${thumbnail.image})`}} className='w-[330px] h-[186px] bg-[image:var(--image-url)] rounded-lg flex justify-center items-center flex-col gap-2 border border-gray-400 bg-cover'>
+        <div style={{['--image-url' as string]: `url(${thumbnail.image})`}} className='w-[330px] h-[186px] bg-[image:var(--image-url)] rounded-lg flex justify-center items-center flex-col gap-2 border border-gray-400 bg-cover'>
               {/* you can add image here thumbnaol */}
             </div>
             <div className='flex w-[350px]'>
