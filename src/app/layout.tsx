@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "youtube video thumbnail preview",
   ],
   alternates: {
-    canonical: "https://www.freethumbnailstester.vercel.app/",
+    canonical: "https://freethumbnailstester.vercel.app/",
   },
 };
 
