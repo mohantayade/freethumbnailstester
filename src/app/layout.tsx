@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Welcome to our Free YouTube Thumbnails Tester site! Are you looking to enhance your online presence with eye-catching thumbnails? Look no further!",
 
   verification: {
-    google: "t9dHCWpedhtN56-mHLv09WHtwYIUqXoS6Tco-ftcArA",
+    google: "Rdz1Sy-gIVUw0rNR6d0CWhnzzGs_cR0mKnncv6ZZilA",
   },
   keywords: [
     "youtube thumbnail",
