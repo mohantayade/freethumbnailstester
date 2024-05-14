@@ -1,26 +1,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.freethumbnailstester.vercel.app</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
+    <loc>https://freethumbnailstester.vercel.app/</loc>
+  
   </url>
   <url>
-    <loc>https://www.freethumbnailstester.vercel.app/about</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://freethumbnailstester.vercel.app/about</loc>
   </url>
   <url>
-    <loc>https://www.freethumbnailstester.vercel.app/privacy-policy</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://freethumbnailstester.vercel.app/privacy-policy</loc>
+  
   </url>
   <url>
-    <loc>https://www.freethumbnailstester.vercel.app/term-and-conditions</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://freethumbnailstester.vercel.app/term-and-conditions</loc>
   </url>
 </urlset>
