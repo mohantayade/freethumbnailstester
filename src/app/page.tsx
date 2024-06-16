@@ -30,14 +30,14 @@ export default function Home() {
 
  
   return (
-    <div className="">
-       <h1 className="text-5xl font-semibold tracking-tighter w-full py-9 text-center">Test Your Youtube Thumbnail 📽️ </h1>
-      <h2 className="text-4xl font-semibold tracking-tighter w-full py-9 text-center">Upload an image to create a new Thumbnail preview 🧐 </h2>
+    <div className="mt-5 md:mt-2">
+       <h1 className="text-3xl md:text-5xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Test Your Youtube Thumbnail <span>📽️</span> </h1>
+      <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter w-full py-5 md:py-9 text-center">Upload an image to create a new Thumbnail preview 🧐 </h2>
  
   {/* <ImageUpload/> */}
-  <div className='flex flex-col md:flex-row gap-10 justify-center items-center my-8'>
-      <div>
-        <div style={{["--image-url" as string] : `url(${file})`}} className='max-w-[380px] h-[214px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border '>
+  <div className='flex flex-col md:flex-row gap-10 justify-center items-center md:my-8 '>
+      <div className=" h-auto">
+        <div style={{["--image-url" as string] : `url(${file})`}} className='mx-auto max-w-[350px] md:max-w-[380px] h-[197px] md:h-[214px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border'>
           {/* <img src={file} alt="image" /> */}
           <p className={file?'hidden':'text-2xl font-bold text-gray-400'}>1920 x 1080 px or 16:9</p>
           <input type="file" name="Image" id="image" onChange={handleChange} ref={hiddenFileInput}
@@ -45,17 +45,30 @@ export default function Home() {
           <button onClick={handleClick}  className='bg-[#FF1616] text-white p-3 rounded-3xl font-bold'>{file?'Reupload Image':'Upload Image'}</button>
           </div>
 
-          <div className='flex gap-3 items-center'>
-            <div className="ml-2">
+          <div className='grid grid-cols-6 text-wrap items-center mx-3 '>
+
+            <div className=" w-14 col-span-1">
             <Image src={ytimage} alt="icon" width={50} height={50}/>
             </div>
-            <div>
-            <p className='font-semibold w-[350px] text-wrap mt-2'>{title?title.substring(0,75)+'...':'Your Title is shows in this area...'}</p>
+
+            <div className=" col-span-5 ">
+             
+              <h3 className='max-w-[300px] text-wrap font-semibold  mt-2 truncate text-ellipsis'>
+            {title?title.substring(0,60)+' ...':'Your Title is shows in this area..'}
+            </h3>
+              
+            
             <p className='font-semibold text-gray-500 text-sm'>{channelName?channelName.substring(0,25):'Channel Name'}</p>
             <p className='text-sm text-gray-500'>143k views • 69 days ago</p>
             </div>
+
           </div>
       </div>
+
+
+
+
+
       <div>
       
         <p className='text-xl font-semibold mb-2'>Title:</p>

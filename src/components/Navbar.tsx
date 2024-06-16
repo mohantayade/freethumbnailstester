@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <div className='h-14 bg-[#FF1616] text-white flex items-center font-black justify-between px-5'>
+    <div className='h-14 bg-[#FF1616] text-white flex items-center font-black justify-between px-5 sticky top-0'>
       <div className='flex items-center  md:text-base '><Image alt='logo' src={logo} width={40} height={40} className='mx-2'></Image><Link href="/">Free Thumbnails Tester</Link> </div>
       <div>
       <div className='hidden sm:flex text-sm gap-3'>

@@ -66,6 +66,8 @@ function Youtube() {
       <div className='flex justify-center my-3'>
       <Link href='/' className='bg-[#FF1616] text-white text-xl font-bold p-3 px-4 rounded-3xl'>← Home</Link>
       </div>
+
+
      <div className='flex justify-center '>
       
       <div className='m-5 flex justify-center gap-5 rounded-full py-3  bg-gray-300 px-3'>
@@ -85,12 +87,14 @@ function Youtube() {
         >Phone</button>
       </div>
     </div>
+
+
     <div className='flex justify-center my-8 '>
       
-      <div className={phonebtnActive === true? 'border-black border rounded-3xl p-4 m-1 ':'border-black border rounded-3xl p-5 m-1 w-[1600px] overflow-x-scroll '}>
+      <div className={phonebtnActive === true? 'border-black max-w-[350px] border rounded-3xl p-2 m-1 ':'border-black border rounded-3xl p-5 m-1 w-[1600px] overflow-x-scroll '}>
 
 
-      <div className={phonebtnActive === true? 'flex items-center justify-between':'flex items-center justify-between w-[1500px]'}>
+      <div className={phonebtnActive === true? 'flex items-center  justify-between':'flex items-center justify-between w-[1500px]'}>
        <div className='flex items-center '>
        <Image src={menu} alt='menu' className={phonebtnActive == true? 'hidden':'w-7 h-7 mx-5'} />
         <Image src={youtube} alt='menu' className='w-24 mx-2' />
@@ -122,12 +126,12 @@ function Youtube() {
       <div className='flex flex-col items-center gap-1'><Image src={youlogo} alt='menu' className='w-5 ' />You</div>
     </div>
     }
-    <div className={desktopbtnActive == true ? 'grid grid-cols-4 gap-2 ':'grid grid-rows h-screen w-[400px] overflow-y-scroll mb-2 '}>
+    <div className={desktopbtnActive == true ? 'grid grid-cols-4 gap-2  ':'grid grid-rows h-screen w-[400px] overflow-y-scroll mb-2 overflow-x-hidden'}>
     {
       ytVideo.map((thumbnail)=>(
         <div key={thumbnail.id} className='thumbnail mx-auto my-2'>
         <div>
-        <div style={{['--image-url' as string]: `url(${thumbnail.image})`}} className='w-[330px] h-[186px] bg-[image:var(--image-url)] rounded-lg flex justify-center items-center flex-col gap-2 border border-gray-400 bg-cover'>
+        <div style={{['--image-url' as string]: `url(${thumbnail.image})`}} className='w-[320px] h-[180px] bg-[image:var(--image-url)] rounded-lg flex justify-center items-center flex-col gap-2 border border-gray-400 bg-cover'>
               {/* you can add image here thumbnaol */}
             </div>
             <div className='flex w-[350px]'>
@@ -135,7 +139,7 @@ function Youtube() {
               <Image src={ytprofile} alt="icon" width={35} height={35}/>
               </div>
               <div className='w-full flex-1 flex-col gap-3 items-center '>
-              <p className='font-semibold mt-2 mb-1 pr-4'>{thumbnail.title.substring(0,60)} ...</p>
+              <p className='font-semibold mt-2 mb-1 pr-4 text-wrap w-[270px]'>{thumbnail.title.substring(0,60)} ...</p>
               <div className={desktopbtnActive == false ? 'flex' :'block' }>
               <p className='text-sm text-gray-500 mr-1'>{desktopbtnActive == true ?thumbnail.channelName: thumbnail.channelName + " •"}</p>
               <p className='text-sm text-gray-500'>143k views • 69 days ago</p>
