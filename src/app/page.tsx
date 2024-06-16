@@ -30,7 +30,7 @@ export default function Home() {
 
  
   return (
-    <div className="mt-5 md:mt-2">
+    <div className="mt-5 md:mt-2 ">
        <h1 className="text-3xl md:text-5xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Test Your Youtube Thumbnail <span>📽️</span> </h1>
       <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter w-full py-5 md:py-9 text-center">Upload an image to create a new Thumbnail preview 🧐 </h2>
  
