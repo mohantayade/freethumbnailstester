@@ -3,7 +3,7 @@ import React from "react";
 function privacy() {
   return (
     <div className="max-w-[1000px] mx-auto p-5">
-      <h1 className="text-2xl font-bold text-center">Privacy Policy</h1>
+      <h1 className="text-4xl my-5 font-bold text-center underline">Privacy Policy</h1>
       <p>Last updated: May 11, 2024</p>
       <p>
         This Privacy Policy describes Our policies and procedures on the

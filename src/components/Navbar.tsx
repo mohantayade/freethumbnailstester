@@ -9,8 +9,10 @@ import Link from 'next/link'
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className='h-14 bg-[#FF1616] text-white flex items-center font-black justify-between px-5 sticky top-0'>
-      <div className='flex items-center  md:text-base '><Image alt='logo' src={logo} width={40} height={40} className='mx-2'></Image><Link href="/">Free Thumbnails Tester</Link> </div>
+    <div className='h-14 rounded-lg bg-[#FF1616] text-white flex items-center font-black justify-between px-5 sticky top-2 z-10 mx-2 mt-2'>
+      <div className='flex items-center  md:text-base '>
+        <Image alt='logo' src={logo} width={40} height={40} className='mx-2'></Image>
+        <Link href="/">Free Thumbnails Tester</Link> </div>
       <div>
 
 
@@ -20,7 +22,7 @@ function Navbar() {
             className={
               isOpen
                 ? 
-                "md:flex md:relative md:mt-0 md:gap-10 md:bg-transparent w-full mt-9 bg-[#FF1616] py-5 absolute left-0 z-auto text-center font-bold transition-all text-lg divide-y "
+                "md:flex md:relative md:mt-0 md:gap-10 md:bg-transparent w-full mt-10 rounded-lg bg-[#FF1616] py-5 absolute left-0 z-auto text-center font-bold transition-all text-lg divide-y "
                 : 
                 "md:flex hidden gap-10 font-bold text-lg  "
             }
@@ -32,7 +34,7 @@ function Navbar() {
             </Link>
             </li>
             <li className="py-5 hover:underline underline-offset-8  decoration-white">
-              <Link href="/blog" onClick={() => {
+              <Link href="/blogs" onClick={() => {
               setIsOpen(!isOpen);
             }}>Blogs
             </Link>

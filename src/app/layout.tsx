@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
-    "Free YouTube Thumbnails Tester | Thumbnail Testing Tool to Boost Your Views",
+    "Free YouTube Thumbnails Tester to Boost Your Views | freethumbnailstester",
   description:
     "Welcome to our Free YouTube Thumbnails Tester site! Are you looking to enhance your online presence with eye-catching thumbnails? Look no further!",
 
@@ -36,20 +36,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-X8P7XCYYDP"
-        ></Script>
-        <Script id="google-analytics">
-          {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X8P7XCYYDP'); `}
+        >
         </Script>
+
+
+                <Script id="google-analytics">
+                      {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-X8P7XCYYDP'); `}
+                </Script>
+                
       </head>
       <body suppressHydrationWarning={true} className={inter.className}>
         <Navbar />

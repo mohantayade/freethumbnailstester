@@ -5,7 +5,7 @@ function term() {
     <div className='max-w-[1000px] mx-auto p-5'>
 
 <>
-  <h1 className='text-2xl font-bold text-center'>Terms and Conditions</h1>
+  <h1 className='text-3xl md:text-4xl my-5 font-semibold text-center underline'>Terms and Conditions</h1>
   <p>Last updated: May 11, 2024</p>
   <p>
     Please read these terms and conditions carefully before using Our Service.

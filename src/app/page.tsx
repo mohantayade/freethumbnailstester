@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import ytimage from '../assets/ytprofile.png'
 import Link from "next/link";
+import Script from "next/script";
 
 
 
@@ -23,16 +24,87 @@ export default function Home() {
  
 
   function handleChange(e:any) {
-    console.log(e.target.files);
+    
     setFile(URL.createObjectURL(e.target.files[0]));
     handleClick(e.target.files)
 }
 
- 
+const jsonld=[
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Free Thumbnail Tester",
+    "url": "https://freethumbnailstester.vercel.app/",
+  }
+]
+
+const jsonldA=[
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Free Thumbnail Tester",
+    "operatingSystem": "Browser | Web Application - runs on your browser",
+    "applicationCategory": "BrowserApplication",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "ratingCount": "8864"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+]
+
+
+const jsonldb={
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Thumbnail Tester",
+    "item": "https://freethumbnailstester.vercel.app/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Blogs",
+    "item": "https://freethumbnailstester.vercel.app/blogs"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "About",
+    "item": "https://freethumbnailstester.vercel.app/about"  
+  },{
+    "@type": "ListItem", 
+    "position": 4, 
+    "name": "Thumbnail Tips",
+    "item": "https://freethumbnailstester.vercel.app/blogs/how-to-create-attractive-thumbnail-for-youtube"  
+  }]
+}
+
   return (
     <div className="mt-5 md:mt-2 ">
-       <h1 className="text-3xl md:text-5xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Test Your Youtube Thumbnail <span>📽️</span> </h1>
-      <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter w-full py-5 md:py-9 text-center">Upload an image to create a new Thumbnail preview 🧐 </h2>
+      <Script type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonld),
+        }}></Script>
+        <Script type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonldA),
+        }}></Script>
+        <Script type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonldb),
+        }}></Script>
+       <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Test Your Youtube Thumbnail <span>📽️</span> </h1>
+
+       <div className=" md:border-2 md:bg-zinc-200 border-gray-300 mx-1 p-2 md:mx-auto  md:max-w-[1000px] my-5 rounded-xl py-6">
+
+      
+      <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter w-full py-5 md:py-5  text-center">Upload an image to create a new Thumbnail preview 🧐 </h2>
  
   {/* <ImageUpload/> */}
   <div className='flex flex-col md:flex-row gap-10 justify-center items-center md:my-8 '>
@@ -69,7 +141,7 @@ export default function Home() {
 
 
 
-      <div>
+      <div >
       
         <p className='text-xl font-semibold mb-2'>Title:</p>
         <input className='rounded-3xl text-xl font-semibold px-4 py-2 border border-black mb-3 text-gray-600' type="text" onChange={(event)=>setTitle(event.target.value)}/>
@@ -98,10 +170,10 @@ export default function Home() {
       
     </div>
 
+    </div>
+<hr className="max-w-[300px] mx-auto px-5 border-2 rounded-lg"/>
 
-{/* hjhhhhhhhhhhhh */}
-
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 mt-10">
         <p className="text-5xl mb-2">🤔</p>
       <h3 className="text-2xl font-bold mb-2 px-3">How Thumbnail Tester Works?</h3>
       <p className="max-w-[100] px-8 md:px-14 lg:px-48 font-bold text-gray-500">Thumbnail Tester lets you to test your YouTube Titles and Thumbnails in context of the current YouTube feed and layout.</p><p className="max-w-[100] px-8 md:px-14 lg:px-48 font-bold text-gray-500">

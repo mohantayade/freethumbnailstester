@@ -4,7 +4,7 @@ function about() {
   return (
     <div className='max-w-[1000px] flex flex-col mx-auto my-6 p-5'>
 
-<h2 className='text-2xl font-bold text-center'>Free Thumbnails Tester</h2>
+<h2 className='text-3xl md:text-4xl my-5 font-bold text-center underline'>Free Thumbnails Tester</h2>
 
 <h2 className='text-xl font-semibold -ml-3'>I. About Company:</h2>
 <li>Briefly introduce the company and its purpose</li>
