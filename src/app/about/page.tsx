@@ -1,4 +1,12 @@
 import React from 'react'
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"About | freethumbnailstester",
+  robots:"noindex",
+  description:"This is about page",
+  keywords:""
+}
+
 
 function about() {
   return (

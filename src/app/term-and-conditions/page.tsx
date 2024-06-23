@@ -1,4 +1,11 @@
 import React from 'react'
+import type { Metadata } from 'next'
+export const metadata: Metadata = {
+  title:"Terms and Conditions | freethumbnailstester",
+  robots:"noindex",
+  description:"This is Terms and Conditions page",
+  keywords:""
+}
 
 function term() {
   return (
