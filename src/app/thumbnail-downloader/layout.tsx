@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Script from 'next/script';
+
 export const metadata: Metadata = {
   title:"YouTube Thumbnail Downloader HD free | freethumbnailstester",
   description:"Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",
@@ -24,10 +26,40 @@ export const metadata: Metadata = {
   ]
 }
 
+
+const jsonld={
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://freethumbnailstester.vercel.app/thumbnail-downloader"
+  },
+  "headline": "How to Download a YouTube Thumbnail ?",
+  "description": "Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",  
+  "author": {
+    "@type": "Organization",
+    "name": "Free Thumbnail Tester"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Free Thumbnail Tester",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://freethumbnailstester.vercel.app/favicon.ico"
+    }
+  },
+  "datePublished": "2024-07-30"
+}
+
 export default function DashboardLayout({
     children,
   }: {
     children: React.ReactNode
   }) {
-    return <section>{children}</section>
+    return <section>
+      <head><Script id="4" type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonld),
+        }} /></head>
+      {children}</section>
   }

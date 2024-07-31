@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import Script from 'next/script';
+
 import React, {  useEffect, useState } from 'react';
 
 
@@ -55,42 +55,14 @@ useEffect(()=>{
         document.body.removeChild(link);
     }
 
-    
-// other section
 
-      const jsonld={
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://freethumbnailstester.vercel.app/thumbnail-downloader"
-        },
-        "headline": "How to Download a YouTube Thumbnail ?",
-        "description": "Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",  
-        "author": {
-          "@type": "Organization",
-          "name": "Free Thumbnail Tester"
-        },  
-        "publisher": {
-          "@type": "Organization",
-          "name": "Free Thumbnail Tester",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://freethumbnailstester.vercel.app/favicon.ico"
-          }
-        },
-        "datePublished": "2024-07-30"
-      }
       
 
 
 
     return (
         <>
-        <Script id="1" type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonld),
-        }} />
+        
         <div className='mt-7'>
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Download Youtube Thumbnail <span>⬇️</span> </h1>
         </div>
