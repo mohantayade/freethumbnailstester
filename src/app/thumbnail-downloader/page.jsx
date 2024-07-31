@@ -60,13 +60,13 @@ useEffect(()=>{
 
     return (
         <>
-        <div>
-            
+        <div className='mt-7'>
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Download Youtube Thumbnail <span>⬇️</span> </h1>
         </div>
 <div className='flex flex-col  gap-10 justify-center items-center md:my-8 max-w-[800px] mx-auto'>
 
             <div className='flex flex-col justify-center items-center w-full p-3  '>
-            <label className='text-xl font-extrabold text-[#FF1616] underline underline-offset-2 self-start px-2 my-4'>1. Past Your Youtube URL :</label>
+            <label className='text-xl font-extrabold text-[#FF1616] underline underline-offset-2 self-start px-2 my-7'>1. Past Your Youtube URL :</label>
             <input
                 name="url"
                 type="search"

@@ -10,6 +10,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='h-14 rounded-lg bg-[#FF1616] text-white flex items-center font-black justify-between px-5 sticky top-2 z-10 mx-2 mt-2'>
+     
       <div className='flex items-center  md:text-base '>
         <Image alt='logo' src={logo} width={40} height={40} className='mx-2'></Image>
         <Link href="/">Free Thumbnails Tester</Link> </div>
@@ -33,8 +34,8 @@ function Navbar() {
             }}>Home
             </Link>
             </li>
-            <li className="py-5 hover:underline underline-offset-8  decoration-white">
-              <Link href="/thumbnail-downloader" onClick={() => {
+            <li className="py-5 hover:underline underline-offset-8  decoration-white ">
+              <Link  href="/thumbnail-downloader" onClick={() => {
               setIsOpen(!isOpen);
             }}>Thumbnail Downloader
             </Link>
