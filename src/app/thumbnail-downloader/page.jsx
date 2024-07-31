@@ -1,17 +1,16 @@
 "use client"
 import Image from 'next/image';
+import Script from 'next/script';
 import React, {  useEffect, useState } from 'react';
+
+
 
 export default function Page() {
     const [url, setUrl] = useState('https://www.youtube.com/watch?v=tVWWp1PqDus');
     const [imgSrc, setImgSrc] = useState('');
     const [activeB, setActiveB] = useState(0);
 
-    // function fullPage() {
-    //     const fullPage = document.querySelector('#fullpage');
-    //     fullPage.style.backgroundImage = `url(${imgSrc})`;
-    //     fullPage.style.display = 'block';
-    // }
+   
 useEffect(()=>{
     dynamicUrl()
 },[setImgSrc,url])
@@ -57,9 +56,26 @@ useEffect(()=>{
     }
 
     
+// other section
+    const jsonld = [
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Free Thumbnail Downloader",
+          "url": "https://freethumbnailstester.vercel.app/thumbnail-downloader/",
+        }
+      ]
+
+
+
+
 
     return (
         <>
+        <Script id="1" type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonld),
+        }} />
         <div className='mt-7'>
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Download Youtube Thumbnail <span>⬇️</span> </h1>
         </div>
@@ -102,7 +118,40 @@ useEffect(()=>{
             
         </div>
 
+<div className='max-w-[1000px] mx-auto px-5 mb-10'>
+<h2 className='text-2xl md:text-3xl font-bold text-[#FF1616] underline-offset-8 underline my-4'>How to Download a YouTube Thumbnail ?</h2>
 
+<p>Downloading a YouTube thumbnail is easy and fast if you know how. Here’s how:</p>
+
+<h3 className='text-xl md:text-xl font-bold text-[#FF1616] my-4' >1. Paste Your YouTube URL</h3>
+
+<p>First you need to get the URL of the YouTube video whose thumbnail you want to download. You can do this by:</p>
+
+<li className='my-2'>Going to the YouTube video.</li>
+
+<li className='my-2'>Copying the URL from the address bar.</li>
+
+<p>Once you have the URL, paste it into the URL field on the thumbnail downloader on your website.</p>
+
+<h3 className='text-xl md:text-xl font-bold text-[#FF1616] my-4'>2. Choose Quality</h3>
+
+<p>Next you need to choose the quality of the thumbnail you want to download. You may have options like:</p>
+
+<li className='my-2'>Low quality (.jpg): Smaller file size and faster download, good for quick references.</li>
+
+<li className='my-2'>Max quality (.jpg): Highest resolution available in JPEG format, good for presentations or detailed view.</li>
+
+<li className='my-2'>Max quality (.webp): Highest resolution but in WEBP format, which has better compression and quality balance than JPEG.</li>
+
+<h3 className='text-xl md:text-xl font-bold text-[#FF1616] my-4'>3. Download</h3>
+
+<p>Once you’ve chosen the quality, click the “Download” button. The thumbnail will be saved to your device in the chosen format and quality.</p>
+
+<h3 className='text-xl md:text-xl font-bold text-[#FF1616] my-4'>Preview</h3>
+
+<p>Some tools offer a preview of the thumbnail before you download so you can check if it’s the right image. This is useful if you want to check the video thumbnail without downloading it first.</p>
+
+</div>
 
         </>
         
