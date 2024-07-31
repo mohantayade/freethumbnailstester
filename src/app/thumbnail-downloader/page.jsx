@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, {  useEffect, useState } from 'react';
 
 export default function Page() {
-    const [url, setUrl] = useState('https://www.youtube.com/watch?v=k8mOAV0KJLE');
+    const [url, setUrl] = useState('https://www.youtube.com/watch?v=tVWWp1PqDus');
     const [imgSrc, setImgSrc] = useState('');
     const [activeB, setActiveB] = useState(0);
 
@@ -71,7 +71,7 @@ useEffect(()=>{
                 name="url"
                 type="search"
                 id="url"
-                className="rounded-3xl  font-semibold px-4 py-2 border-2 border-red-500   text-gray-600 w-[72vw]"
+                className="rounded-3xl  font-semibold px-4 py-2 border-2 border-red-500   text-gray-600 w-[82vw]"
                 defaultValue={url}
                 onChange={(e) => setUrl(e.target.value)}
             />
@@ -83,11 +83,11 @@ useEffect(()=>{
                     <div className="flex flex-wrap justify-center gap-5 text-xl ">
                         <button 
                         className={activeB==0?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg"} 
-                        onClick={() => dynamicUrl(0)}>👀 Get Low quality.jpg  </button>
+                        onClick={() => dynamicUrl(0)}>👀 Low quality.jpg  </button>
 
-                        <button className={activeB==1?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg"} onClick={() => dynamicUrl(1) }>👀 Get Max quality.jpg  </button>
+                        <button className={activeB==1?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg"} onClick={() => dynamicUrl(1) }>👀 Max quality.jpg  </button>
 
-                        <button className={activeB==2?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg"} onClick={() => dynamicUrl(2) }>👀 Get Max quality.webp</button>
+                        <button className={activeB==2?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg font-bold"} onClick={() => dynamicUrl(2) }>👀 Max quality.webp</button>
                     </div>
 
                     <label className='self-start text-xl font-extrabold text-[#FF1616] underline underline-offset-2  px-2 my-4'>3. Click Download :</label>
