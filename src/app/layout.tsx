@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({subsets:["latin"], weight:"400"});
 
 export const metadata: Metadata = {
   title:
@@ -41,8 +41,7 @@ export default function RootLayout({
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-X8P7XCYYDP"
-        >
-        </Script>
+        />
 
 
                 <Script id="google-analytics">

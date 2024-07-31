@@ -7,7 +7,8 @@ import ytimage from '../assets/ytprofile.png'
 import Link from "next/link";
 import Script from "next/script";
 
-
+import hthumb1 from "@/assets/howto/how to create a new thumbnail preview.jpg"
+import hthumb2 from "@/assets/howto/how look like your youtube video on thumbnail.jpg"
 
 export default function Home() {
 
@@ -104,7 +105,7 @@ const jsonldb={
        <div className=" md:border-2 md:bg-zinc-200 border-gray-300 mx-1 p-2 md:mx-auto  md:max-w-[1000px] my-5 rounded-xl py-6">
 
       
-      <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter w-full py-5 md:py-5  text-center">Upload an image to create a new Thumbnail preview 🧐 </h2>
+      <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter w-full py-5 md:py-5  text-center" >Upload an image to create a new Thumbnail preview 🧐 </h2>
  
   {/* <ImageUpload/> */}
   <div className='flex flex-col md:flex-row gap-10 justify-center items-center md:my-8 '>
@@ -133,7 +134,7 @@ const jsonldb={
             <p className='font-semibold text-gray-500 text-sm'>{channelName?channelName.substring(0,25):'Channel Name'}</p>
             <p className='text-sm text-gray-500'>143k views • 69 days ago</p>
             </div>
-
+           
           </div>
       </div>
 
@@ -180,17 +181,28 @@ const jsonldb={
 Compare your video's thumbnail and title in context to current content you can see how well your content stands out.</p>
 
       </div>
+
+
+
+
+
+
+
+
+
       {/* <Preview titles={title} thumbimage={file} channelName={channelName} /> */}
      <div className="my-5 max-w-[1000px] mx-auto px-4">
-      <h2 className="text-center text-2xl font-bold">How to use thumbnails Tester</h2>
+      <h2 className="text-center text-2xl font-bold text-[#FF1616] bg-gray-200 p-5 rounded-lg">How to use thumbnails Tester</h2>
+
+
       <p className="text-base font-medium my-4">First, type your title and then type your YouTube channel name, and most importantly, upload your thumbnail in the upper section. If you submit all things, then simply click on the Preview button. After this submission, it shows your YouTube thumbnail and title in the YouTube simulator. You can view your thumbnail to see how it looks on YouTube after the video is uploaded.</p>
      
-      
+      <Image src={hthumb1} alt="1st step of thumbnail tester"></Image>
 
 <p className="text-base font-medium my-4">Next, your YouTube channel name plays a crucial role in establishing your brand identity and making it memorable for your audience. Choose a name that is catchy, easy to remember, and aligns with the theme or niche of your content. Consistency across your channel name, content, and branding elements helps reinforce your channel's identity and makes it easier for viewers to find and recognize your videos.</p>
 
 <p className="text-base font-medium my-4">Now, let’s talk about the importance of thumbnails. Beautiful thumbnails are like a visual invitation to record your video. It needs to be eye-catching, high-quality, and relevant to the content of your video. Use bright colors, clear images, and concise text to emphasize what your video is about and entice viewers to watch it. Remember to optimize your thumbnails for different devices and screen sizes to ensure they look good on all platforms.</p>
-
+<Image src={hthumb2} alt="2st you can view your video thumbnail on youtube simulation"></Image>
 <p className="text-base font-medium my-4">Once you've crafted your title, chosen your channel name, and created an attention-grabbing thumbnail, it's time to upload them to YouTube. Navigate to the upload section of your channel, select your video file, and fill in the relevant details, including your title, description, tags, and thumbnail. Take the time to optimize these elements for search and discoverability, as they can greatly impact the success of your video.</p>
 
 <p className="text-base font-medium my-4">Finally, as soon as you've got submitted all the essential statistics, recall to click at the Preview button to see how your video will appear to viewers on YouTube. The preview allows you to double-test everything and make any final-minute adjustments earlier than publishing your video to the world. Once you are happy with how the whole lot seems, cross in advance and hit the post button, and watch as your video is going stay for the world to see.</p>
@@ -198,6 +210,8 @@ Compare your video's thumbnail and title in context to current content you can s
       
 
      </div>
+
+     
     </div>
   );
 }
