@@ -79,11 +79,12 @@ function page() {
 
   return (
     <div>
-      <Script type="application/ld+json"
+      <Script id='' type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonld),
         }}></Script>
-        <Script type="application/ld+json"
+
+        <Script id='' type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonldhowto),
         }}></Script>
@@ -101,7 +102,7 @@ function page() {
       <h1 className=' text-3xl md:text-4xl text-pretty font-extrabold  px-5 my-5'>How to Create high-quality YouTube thumbnails ?</h1>
 {/* blog image */}
       <div className='flex justify-center items-center px-5 mb-5'>  
-      <Image className=' w-full mx-auto rounded-lg shadow-gray-800 shadow-lg'  alt='How to create attractive thumbnail for YouTube.' src={'/blogs-images/how-to-create-high-quality-youtube-thumbnails.jpg'} width={1000} height={500}></Image>
+      <Image className=' w-full mx-auto rounded-lg shadow-gray-800 shadow-lg'  alt='How to create attractive thumbnail for YouTube.' src={'/blogs-images/how-to-create-high-quality-youtube-thumbnails.jpg'} width={600} height={300}></Image>
       </div>
      
      {/* blog content */}

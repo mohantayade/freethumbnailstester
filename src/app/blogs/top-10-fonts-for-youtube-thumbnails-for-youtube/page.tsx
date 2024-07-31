@@ -53,10 +53,12 @@ function page() {
 
   return (
     <div>
-      <Script type="application/ld+json"
+      <Script id='' type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonld),
-        }}></Script>
+        }}>
+        </Script>
+        
       <div className='h-auto'>
       <div className='my-6 md:my-10'>
         
@@ -71,7 +73,7 @@ function page() {
       <h1 className=' text-3xl md:text-4xl text-pretty font-extrabold  px-5 my-5'>Top 10 fonts for Youtube Thumbnails for YouTube.</h1>
 {/* blog image */}
       <div className='flex justify-center items-center px-5 mb-5'>  
-      <Image className=' w-full mx-auto rounded-lg shadow-gray-800 shadow-lg'  alt='How to create attractive thumbnail for YouTube.' src={'/blogs-images/top-10-fonts-for-youtube-thumbnails.jpg'} width={1000} height={500}></Image>
+      <Image className=' w-full mx-auto rounded-lg shadow-gray-800 shadow-lg'  alt='How to create attractive thumbnail for YouTube.' src={'/blogs-images/top-10-fonts-for-youtube-thumbnails.jpg'} width={600} height={300}></Image>
       </div>
      
      {/* blog content */}

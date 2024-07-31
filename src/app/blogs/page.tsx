@@ -50,8 +50,8 @@ function blogs() {
 
             <div className=' rounded-xl p-2 md:flex my-4  shadow-gray-600 shadow-md' >
               <div className='flex justify-center items-center md:min-w-[280px]'>
-                <Link href='/blogs/how-to-create-attractive-thumbnail-for-youtube'>
-                      <Image className='hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/how-to-create-attractive-thumbnail.jpg'} width={600} height={300}></Image>
+                <Link className='w-full' href='/blogs/how-to-create-attractive-thumbnail-for-youtube'>
+                      <Image className='w-full hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/how-to-create-attractive-thumbnail.jpg'} width={200} height={100}></Image>
                 </Link>
               </div>
               <div className='m-3 '>
@@ -63,9 +63,9 @@ function blogs() {
         {/* blog2 */}
 
         <div className=' rounded-xl p-2 md:flex my-4  shadow-gray-600 shadow-md' >
-              <div className='flex justify-center items-center md:min-w-[280px]'>
-                <Link href='/blogs/5-steps-to-make-a-thumbnail-easy'>
-                      <Image className='hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/5-steps-to-make-a-thumbnail-easy.jpg'} width={600} height={300}></Image>
+              <div className='flex  justify-center items-center md:min-w-[280px]'>
+                <Link className='w-full ' href='/blogs/5-steps-to-make-a-thumbnail-easy'>
+                      <Image  className='w-full hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/5-steps-to-make-a-thumbnail-easy.jpg'} width={200} height={100}></Image>
                 </Link>
               </div>
               <div className='m-3 '>
@@ -76,8 +76,8 @@ function blogs() {
         {/* blog 3 */}
            <div className=' rounded-xl p-2 md:flex my-4  shadow-gray-600 shadow-md' >
               <div className='flex justify-center items-center md:min-w-[280px]'>
-                <Link href='/blogs/top-10-fonts-for-youtube-thumbnails-for-youtube'>
-                      <Image className='hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/top-10-fonts-for-youtube-thumbnails.jpg'} width={600} height={300}></Image>
+                <Link className='w-full' href='/blogs/top-10-fonts-for-youtube-thumbnails-for-youtube'>
+                      <Image className='w-full hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/top-10-fonts-for-youtube-thumbnails.jpg'} width={200} height={100}></Image>
                 </Link>
               </div>
               <div className='m-3 '>
@@ -89,8 +89,8 @@ function blogs() {
         {/* blog 4 */}
            <div className=' rounded-xl p-2 md:flex my-4  shadow-gray-600 shadow-md' >
               <div className='flex justify-center items-center md:min-w-[280px]'>
-                <Link href='/blogs/how-to-create-high-quality-youtube-thumbnails'>
-                      <Image className='hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/how-to-create-high-quality-youtube-thumbnails.jpg'} width={600} height={300}></Image>
+                <Link className='w-full' href='/blogs/how-to-create-high-quality-youtube-thumbnails'>
+                      <Image className='w-full hover:brightness-75 rounded-lg shadow-black shadow' alt='image' src={'/blogs-images/how-to-create-high-quality-youtube-thumbnails.jpg'} width={200} height={100}></Image>
                 </Link>
               </div>
               <div className='m-3 '>

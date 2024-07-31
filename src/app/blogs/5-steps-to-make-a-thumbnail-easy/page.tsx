@@ -74,7 +74,7 @@ function page() {
       <h1 className=' text-3xl md:text-4xl text-pretty font-extrabold  px-5 my-5'>5 Steps to make a thumbnail easy ?</h1>
 {/* blog image */}
       <div className='flex justify-center items-center px-5 mb-5'>  
-      <Image className=' w-full mx-auto rounded-lg shadow-gray-800 shadow-lg'  alt='How to create attractive thumbnail for YouTube.' src={'/blogs-images/5-steps-to-make-a-thumbnail-easy.jpg'} width={1000} height={500}></Image>
+      <Image className=' w-full mx-auto rounded-lg shadow-gray-800 shadow-lg'  alt='How to create attractive thumbnail for YouTube.' src={'/blogs-images/5-steps-to-make-a-thumbnail-easy.jpg'} width={600} height={300}></Image>
       </div>
      
      {/* blog content */}
