@@ -34,6 +34,13 @@ function Navbar() {
             </Link>
             </li>
             <li className="py-5 hover:underline underline-offset-8  decoration-white">
+              <Link href="/thumbnail-downloader" onClick={() => {
+              setIsOpen(!isOpen);
+            }}>Thumbnail Downloader
+            </Link>
+            </li>
+
+            <li className="py-5 hover:underline underline-offset-8  decoration-white">
               <Link href="/blogs" onClick={() => {
               setIsOpen(!isOpen);
             }}>Blogs
