@@ -56,7 +56,7 @@ function page() {
 
   return (
     <div>
-      <Script type="application/ld+json"
+      <Script id='1' type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonld),
         }}></Script>

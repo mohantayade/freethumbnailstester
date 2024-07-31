@@ -57,16 +57,31 @@ useEffect(()=>{
 
     
 // other section
-    const jsonld = [
-        {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "Free Thumbnail Downloader",
-          "url": "https://freethumbnailstester.vercel.app/thumbnail-downloader/",
-        }
-      ]
 
-
+      const jsonld={
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://freethumbnailstester.vercel.app/thumbnail-downloader"
+        },
+        "headline": "How to Download a YouTube Thumbnail ?",
+        "description": "Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",  
+        "author": {
+          "@type": "Organization",
+          "name": "Free Thumbnail Tester"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "Free Thumbnail Tester",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://freethumbnailstester.vercel.app/favicon.ico"
+          }
+        },
+        "datePublished": "2024-07-30"
+      }
+      
 
 
 
