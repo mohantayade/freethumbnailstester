@@ -63,23 +63,23 @@ useEffect(()=>{
         <div>
             
         </div>
-<div className='flex flex-col  gap-10 justify-center items-center md:my-8 '>
+<div className='flex flex-col  gap-10 justify-center items-center md:my-8 max-w-[800px] mx-auto'>
 
-            <div className='flex flex-col justify-center items-center '>
+            <div className='flex flex-col justify-center items-center w-full p-3  '>
             <label className='text-xl font-extrabold text-[#FF1616] underline underline-offset-2 self-start px-2 my-4'>1. Past Your Youtube URL :</label>
             <input
                 name="url"
                 type="search"
                 id="url"
-                className="rounded-3xl  font-semibold px-4 py-2 border-2 border-red-500   text-gray-600 w-[82vw]"
+                className="rounded-3xl  font-semibold px-4 py-2 border-2 border-red-500 grow  text-gray-600 w-full"
                 defaultValue={url}
                 onChange={(e) => setUrl(e.target.value)}
             />
             </div>
 
 
-            <div className='flex flex-col gap-6 justify-center items-center'>
-                <label className='text-xl font-extrabold text-[#FF1616] underline underline-offset-2 self-start px-2 my-4'>2. Select Quality :</label>
+            <div className='flex flex-col gap-6 justify-center items-center w-full'>
+                <label className='text-xl font-extrabold text-[#FF1616] underline underline-offset-2 self-start px-3 my-4'>2. Select Quality :</label>
                     <div className="flex flex-wrap justify-center gap-5 text-xl ">
                         <button 
                         className={activeB==0?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg"} 
@@ -90,7 +90,7 @@ useEffect(()=>{
                         <button className={activeB==2?"border p-4 text-white bg-red-900 mx-3 rounded-lg":"border p-4 mx-3 bg-[#FF1616] text-white rounded-lg font-bold"} onClick={() => dynamicUrl(2) }>👀 Max quality.webp</button>
                     </div>
 
-                    <label className='self-start text-xl font-extrabold text-[#FF1616] underline underline-offset-2  px-2 my-4'>3. Click Download :</label>
+                    <label className='self-start text-xl font-extrabold text-[#FF1616] underline underline-offset-2  px-3 my-4'>3. Click Download :</label>
             <button className="border p-4 mx-3 bg-[#FF1616] text-white rounded-lg" onClick={() => download()}>⏬ Download</button>
             </div>
           
