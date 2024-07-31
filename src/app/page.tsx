@@ -110,6 +110,7 @@ export default function Home() {
 
         {/* <ImageUpload/> */}
         <div className='flex flex-col md:flex-row gap-10 justify-center items-center md:my-8 '>
+
           <div className=" h-auto">
             <div style={{ ["--image-url" as string]: `url(${file})` }} className='mx-auto max-w-[350px] md:max-w-[380px] h-[197px] md:h-[214px] bg-[image:var(--image-url)] bg-cover rounded-lg flex justify-center items-center  flex-col gap-2 border-black border'>
               {/* <img src={file} alt="image" /> */}
@@ -146,11 +147,11 @@ export default function Home() {
           <div className="grow-1" >
 
             <p className='text-xl font-semibold mb-2'>Title:</p>
-            <input className='rounded-3xl text-xl font-semibold px-4 py-2 border border-black mb-3 text-gray-600' type="text" onChange={(event) => setTitle(event.target.value)} />
+            <input className='rounded-3xl text-xl font-semibold px-4 py-2 border border-black mb-3 text-gray-600 w-full' type="text" onChange={(event) => setTitle(event.target.value)} />
             <p className='text-xl font-semibold  mb-2'>Channel Name:</p>
             <input
               onChange={(event) => setChannelName(event.target.value)}
-              className='text-gray-600 rounded-3xl text-xl font-semibold px-4 py-2 border border-black ' type="text" />
+              className='text-gray-600 rounded-3xl text-xl font-semibold px-4 py-2 border border-black w-full' type="text" />
 
             <div className='mt-8'>
 
