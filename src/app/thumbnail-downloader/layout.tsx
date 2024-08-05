@@ -1,33 +1,32 @@
 import type { Metadata } from 'next'
 import Script from 'next/script';
-
 export const metadata: Metadata = {
-  title:"YouTube Thumbnail Downloader HD free | freethumbnailstester",
-  description:"Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",
-  alternates:{
+  title: "YouTube Thumbnail Downloader HD free | freethumbnailstester",
+  description: "Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",
+  alternates: {
     canonical: 'https://freethumbnailstester.vercel.app/thumbnail-downloader'
   },
-  keywords:[
+  keywords: [
     "thumbnail youtube download",
-"youtube thumbnail downloader",
-"download thumbnail",
-"download thumbnail one click",
-"download thumbnail youtube",
-"download youtube thumbnail",
-"yt thumbnail download",
-"youtube thumbnail saver",
-"youtube thumbnail download 4k",
-"download youtube thumbnail hd",
-"download youtube thumbnail jpg hd",
-"download youtube thumbnail high quality",
-"How do I download a thumbnail image?",
-"How do I download an image from YouTube?",
-"How to copy YouTube thumbnails?",
+    "youtube thumbnail downloader",
+    "download thumbnail",
+    "download thumbnail one click",
+    "download thumbnail youtube",
+    "download youtube thumbnail",
+    "yt thumbnail download",
+    "youtube thumbnail saver",
+    "youtube thumbnail download 4k",
+    "download youtube thumbnail hd",
+    "download youtube thumbnail jpg hd",
+    "download youtube thumbnail high quality",
+    "How do I download a thumbnail image?",
+    "How do I download an image from YouTube?",
+    "How to copy YouTube thumbnails?",
   ]
 }
 
 
-const jsonld={
+const jsonld = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "mainEntityOfPage": {
@@ -35,11 +34,11 @@ const jsonld={
     "@id": "https://freethumbnailstester.vercel.app/thumbnail-downloader"
   },
   "headline": "How to Download a YouTube Thumbnail ?",
-  "description": "Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",  
+  "description": "Free YouTube Thumbnail Downloader HD Quality ,You can download any YouTube Thumbnail in .jpg .webp format freely on freethumbnailstester",
   "author": {
     "@type": "Organization",
     "name": "Free Thumbnail Tester"
-  },  
+  },
   "publisher": {
     "@type": "Organization",
     "name": "Free Thumbnail Tester",
@@ -52,14 +51,14 @@ const jsonld={
 }
 
 export default function DashboardLayout({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
-    return <section>
-      <head><Script id="4" type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonld),
-        }} /></head>
-      {children}</section>
-  }
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return <section>
+    <Script id="4" type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(jsonld),
+      }} />
+    {children}</section>
+}
