@@ -176,6 +176,7 @@ export default function Home() {
       </div>
       <hr className="max-w-[300px] mx-auto px-5 border-2 rounded-lg" />
 
+<h3 className="text-2xl font-bold mb-2 px-3 text-center p-6 mx-3 border-4 rounded-lg"><Link className=" hover:bg-red-500 hover:text-white p-5 rounded-lg" href="/thumbnail-downloader">Thumbnail Downloader 👉</Link></h3>
       <div className="text-center mb-12 mt-10">
         <p className="text-5xl mb-2">🤔</p>
         <h3 className="text-2xl font-bold mb-2 px-3">How Thumbnail Tester Works?</h3>

@@ -118,7 +118,7 @@ function blogs() {
 <div className='md:sticky top-20 my-10 md:my-1 border-4 border-red-500 pb-3 rounded-lg px-2 mx-2 '>
       <div className='text-center flex flex-col divide-y'>
       <Link className='font-bold py-3 bg-[#FF1616]  my-2 rounded-lg text-white hover:bg-red-700 ' href="/">Free Thumbnail Tester 👉</Link>
-      
+      <Link className='font-bold py-3 bg-[#FF1616]  my-2 rounded-lg text-white hover:bg-red-700 ' href="/thumbnail-downloader">Free Thumbnail Downloader 👉</Link>
       <p className='text-lg text-gray-600'>Thumbnail Tester lets you to test your YouTube Titles and Thumbnails in context of the current YouTube feed and layout. Compare your video's thumbnail and title in context to current content you can see how well your content stands out.</p>
       </div>
  </div>

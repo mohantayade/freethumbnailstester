@@ -119,6 +119,7 @@ function page() {
 <div className='md:sticky top-20 my-10 md:my-1 border-4 border-red-500  pb-2 rounded-lg px-2 mx-2 '>
       <div className='text-center flex flex-col divide-y'>
       <Link className='font-bold py-3 bg-[#FF1616]  my-2 rounded-lg text-white hover:bg-red-700' href="/">Free Thumbnail Tester 👉</Link>
+      <Link className='font-bold py-3 bg-[#FF1616]  my-2 rounded-lg text-white hover:bg-red-700 ' href="/thumbnail-downloader">Free Thumbnail Downloader 👉</Link>
       <Link className='font-bold py-3 hover:text-[#FF1616]' href="/">Home</Link>
       <Link className='font-bold py-3 hover:text-[#FF1616]' href="/blogs">All Blogs</Link>
       
