@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title:"Privacy Policy | freethumbnailstester",
-  robots:"noindex",
   description:"Privacy Policy",
   keywords:""
 }
