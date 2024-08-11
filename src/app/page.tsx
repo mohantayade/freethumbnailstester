@@ -178,13 +178,14 @@ export default function Home() {
 
 <h3 className="text-2xl font-bold mb-2 px-3 text-center p-6 mx-3 border-4 rounded-lg"><Link className=" hover:bg-red-500 hover:text-white p-5 rounded-lg" href="/thumbnail-downloader">Thumbnail Downloader 👉</Link></h3>
 <div className="flex justify-center items-center ">
-<div className="max-w-[800px]"><Script src="https://udbaa.com/bnr.php?section=General&pub=654115&format=728x90&ga=g"></Script>
+<div className="max-w-[800px]"><Script src="https://udbaa.com/bnr.php?section=General&pub=654115&format=300x250&ga=g"></Script>
 <Link href="https://yllix.com/publishers/654115" target="_blank"><img 
-  src="//ylx-aff.advertica-cdn.com/pub/728x90.png" 
+  src="//ylx-aff.advertica-cdn.com/pub/300x250.png" 
   style={{ border: "none", margin: 0, padding: 0, verticalAlign: "baseline" }} 
   alt="ylliX - Online Advertising Network" 
 /></Link></div>
 </div>
+
 
 
       <div className="text-center mb-12 mt-10">
