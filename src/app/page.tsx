@@ -88,8 +88,14 @@ export default function Home() {
   const rawHTML = `<script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=654115&format=728x90&ga=g"></script>
 <noscript><a href="https://yllix.com/publishers/654115" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>`;
 
+const addtop = `<script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=654115&format=468x60&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/654115" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/468x60.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>`
   return (
     <div className="mt-5 md:mt-2 ">
+      <div className="flex justify-center items-center">
+      <div dangerouslySetInnerHTML={{ __html: addtop }} className="max-w-[800px] mx-auto" ></div>
+      </div>
+      
       <Script id="1" type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonld),
