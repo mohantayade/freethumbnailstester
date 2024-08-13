@@ -85,6 +85,8 @@ export default function Home() {
       "item": "https://freethumbnailstester.vercel.app/blogs/how-to-create-attractive-thumbnail-for-youtube"
     }]
   }
+  const rawHTML = `<script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=654115&format=728x90&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/654115" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>`;
 
   return (
     <div className="mt-5 md:mt-2 ">
@@ -174,16 +176,12 @@ export default function Home() {
         </div>
 
       </div>
+      <div dangerouslySetInnerHTML={{ __html: rawHTML }} className="max-w-[800px] mx-auto" ></div>
       <hr className="max-w-[300px] mx-auto px-5 border-2 rounded-lg" />
 
 <h3 className="text-2xl font-bold mb-2 px-3 text-center p-6 mx-3 border-4 rounded-lg"><Link className=" hover:bg-red-500 hover:text-white p-5 rounded-lg" href="/thumbnail-downloader">Thumbnail Downloader 👉</Link></h3>
 <div className="flex justify-center items-center ">
-<div className="max-w-[800px]"><Script src="https://udbaa.com/bnr.php?section=General&pub=654115&format=300x250&ga=g"></Script>
-<Link href="https://yllix.com/publishers/654115" target="_blank"><img 
-  src="//ylx-aff.advertica-cdn.com/pub/300x250.png" 
-  style={{ border: "none", margin: 0, padding: 0, verticalAlign: "baseline" }} 
-  alt="ylliX - Online Advertising Network" 
-/></Link></div>
+<div dangerouslySetInnerHTML={{ __html: rawHTML }} className="max-w-[800px] mx-auto" ></div>
 </div>
 
 
@@ -225,7 +223,7 @@ export default function Home() {
 
       </div>
 
-
+      <div dangerouslySetInnerHTML={{ __html: rawHTML }} className="max-w-[800px]" ></div>
     </div>
   );
 }
