@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import Adsense from "@/components/Adsense";
 
 const inter = Poppins({subsets:["latin"], weight:"400"});
 
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
+        <Adsense/>
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-X8P7XCYYDP"
