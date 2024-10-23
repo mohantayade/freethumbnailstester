@@ -40,9 +40,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <Adsense/>
-        <Script
+        
+         <Script
+         type="text/javascript"
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-X8P7XCYYDP"
+          src="https://platform.foremedia.net/code/56871/analytics"
         />
 
 
