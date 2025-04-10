@@ -22,7 +22,7 @@ function Footer() {
         
         <div className='flex-col text-center justify-center pb-3 '>
           <hr className='mb-3' />
-          <p>© 2024 Free Thumbnail Tester</p> 
+          <p>© 2025 Free Thumbnail Tester</p> 
           <p>ALL RIGHTS RESERVED.</p>
           </div>
     </div>
