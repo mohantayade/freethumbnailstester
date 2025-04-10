@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://freethumbnailstester.vercel.app/",
   },
+  
 };
 
 export default function RootLayout({

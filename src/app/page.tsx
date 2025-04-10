@@ -101,6 +101,9 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonldb),
         }} />
+        
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3845105523158440"
+     />
 
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter w-full py-8 md:py-10  text-center rainbow-text ">Test Your Youtube Thumbnail <span>📽️</span> </h1>
 
