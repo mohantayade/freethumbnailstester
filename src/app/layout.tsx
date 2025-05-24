@@ -46,8 +46,12 @@ export default function RootLayout({
          type="text/javascript"
           async
           src="https://platform.foremedia.net/code/56871/analytics"
-        />
-
+        /> 
+        
+        <Script
+          type="text/javascript"
+          src="//pl26732460.profitableratecpm.com/04/99/b8/0499b848e8a80a41021abfa5097afb33.js"
+        ></Script>
 
                 <Script id="google-analytics">
                       {`
