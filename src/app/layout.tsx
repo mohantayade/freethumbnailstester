@@ -10,9 +10,9 @@ const inter = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title:
-    "Free YouTube Thumbnails Tester to Boost Your Views | freethumbnailstester",
+    "YouTube Thumbnail Tester & Checker – Test Your Thumbnails Online",
   description:
-    "Welcome to our Free YouTube Thumbnails Tester site! Are you looking to enhance your online presence with eye-catching thumbnails? Look no further!",
+    "Test and check your YouTube thumbnails instantly! Use our free thumbnail tester, checker, and downloader to optimize your videos for more views and clicks.",
   verification: {
     google: "t9dHCWpedhtN56-mHLv09WHtwYIUqXoS6Tco-ftcArA",
   },
