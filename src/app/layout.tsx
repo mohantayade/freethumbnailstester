@@ -75,6 +75,9 @@ export default function RootLayout({
             })(window,document,"adquake","script","qSW3TW8DuUycQJarJJeZzw==");
           `}
         </Script>
+
+        <script src='https://push.aplu.io/push-notify.js'></script>
+        
       </head>
       <body suppressHydrationWarning={true} className={inter.className}>
         <Navbar />
