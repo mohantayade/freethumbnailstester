@@ -40,16 +40,9 @@ export default function RootLayout({
       <head>
         <Adsense />
 
-        <Script
-          type="text/javascript"
-          async
-          src="https://platform.foremedia.net/code/56871/analytics"
-        />
+        
 
-        <Script
-          type="text/javascript"
-          src="//pl26732460.profitableratecpm.com/04/99/b8/0499b848e8a80a41021abfa5097afb33.js"
-        />
+       
 
         <Script id="google-analytics">
           {`
@@ -60,11 +53,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <Script
-          async
-          src="https://script.adquake.com/js/adquake.js"
-          adquake-key="qSW3TW8DuUycQJarJJeZzw=="
-        />
+        
 
         <Script id="google-tag-manager" type="text/javascript">
           {`(function(a,b,c,d,e,f,g){
@@ -85,10 +74,8 @@ export default function RootLayout({
         <Footer />
 
         {/* ✅ New script inserted here just above </body> */}
-        <Script
-          type="text/javascript"
-          src="//pl26732658.profitableratecpm.com/0d/3e/7b/0d3e7b10a136867a68bd0503666ee1f0.js"
-        />
+       
+       {/* place addd last show */}
       </body>
     </html>
   );
