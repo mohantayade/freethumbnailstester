@@ -17,17 +17,10 @@ function Youtube() {
   const [phonebtnActive,setPhoneBtnActive] = useState(false)
 
   const searchParams = useSearchParams()
-  const imageyt = searchParams.get('images')
-  const titleyt = searchParams.get('title')
-  const channelyt = searchParams.get('channelName')
-  // console.log(imageyt);
-  // const params = useParams()
-  // const titleyt = params.title;
-  // const imageyt = params.images;
-  // const channelyt = params.channelName;
+  const imageyt = searchParams.get('images') || "/thum1.webp"
+  const titleyt = searchParams.get('title') || "Your Video Title"
+  const channelyt = searchParams.get('channelName') || "Your Channel"
 
-  console.log("this is name "+ titleyt)
-  
   const ytVideo = [
     {id:1,
       title:"10 Minutes To Escape Or This Room Explodes!",channelName:"MrBeast",
@@ -139,7 +132,7 @@ function Youtube() {
               <Image src={ytprofile} alt="icon" width={35} height={35}/>
               </div>
               <div className='w-full flex-1 flex-col gap-3 items-center '>
-              <p className='font-semibold mt-2 mb-1 pr-4 text-wrap w-[270px]'>{thumbnail.title.substring(0,60)} ...</p>
+              <p className='font-semibold mt-2 mb-1 pr-4 text-wrap w-[270px]'>{(thumbnail.title || "Untitled Video").substring(0,60)} ...</p>
               <div className={desktopbtnActive == false ? 'flex' :'block' }>
               <p className='text-sm text-gray-500 mr-1'>{desktopbtnActive == true ?thumbnail.channelName: thumbnail.channelName + " •"}</p>
               <p className='text-sm text-gray-500'>143k views • 69 days ago</p>

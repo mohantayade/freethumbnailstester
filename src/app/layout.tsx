@@ -17,13 +17,20 @@ export const metadata: Metadata = {
     google: "t9dHCWpedhtN56-mHLv09WHtwYIUqXoS6Tco-ftcArA",
   },
   keywords: [
-    "youtube thumbnail",
-    "Free YouTube Thumbnails Tester",
-    "thumbnail tester",
-    "thumbnail preview",
-    "youtube seo",
+    "youtube thumbnail tester",
+    "test youtube thumbnail",
+    "youtube thumbnail preview",
+    "youtube thumbnail checker",
+    "youtube thumbnail simulator",
     "preview thumbnail youtube",
+    "youtube thumbnail size",
+    "youtube thumbnail dimensions 1280x720",
+    "youtube ctr tester",
+    "youtube thumbnail safe zone",
     "youtube video thumbnail preview",
+    "youtube seo",
+    "Free YouTube Thumbnails Tester",
+    "youtube thumbnail downloader",
   ],
   alternates: {
     canonical: "https://freethumbnailstester.vercel.app/",
@@ -65,7 +72,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <script src='https://push.aplu.io/push-notify.js'></script>
+        <Script src="https://push.aplu.io/push-notify.js" strategy="afterInteractive" />
         
       </head>
       <body suppressHydrationWarning={true} className={inter.className}>
