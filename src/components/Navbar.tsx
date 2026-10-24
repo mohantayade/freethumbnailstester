@@ -18,7 +18,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="sticky top-2 z-50 px-3 sm:px-6 max-w-6xl mx-auto">
+    <header className="sticky top-2 z-50 px-3 sm:px-6 max-w-6xl mx-auto mb-4 sm:mb-6">
       <nav className="h-16 rounded-2xl bg-[#FF1616] text-white flex items-center justify-between px-5 shadow-lg shadow-red-600/20 backdrop-blur-md">
         {/* Brand / Logo */}
         <Link
